@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Manish Kumar | About me,Explore</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <style>
+        
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                color: #fff;
+            }
+            
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+            }
+            
+            html,
+            body {
+                overflow-x: hidden;
+            }
+            
+            #main {
+                width: 100%;
+                background-color: #081b29;
+            }
+            
+            /* navigation-Content */
+            header {
+                height: 4vw;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(12, 12, 12);
+                padding: 0px 4vw;
+                z-index: 9999;
+                position: relative;
+            }
+            
+            header>i {
+                display: none;
+            }
+            
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            nav li {
+                display: inline-block;
+                margin-left: 50px;
+                transition: all ease 0.5;
+            }
+            
+            nav a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                position: relative;
+                transition: all ease 0.8s;
+            }
+            
+            nav a:hover {
+                color: #05e2eE;
+                text-shadow: 0px 0px 100px #05e2eE;
+            }
+            
+            nav a::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0%;
+                bottom: 0;
+                height: 3px;
+                width: 0%;
+                background-color: #FFB02E;
+                transition: all ease 0.2s;
+            }
+            
+            nav a:hover::after {
+                width: 100%;
+            }
+            
+            span i {
+                font-size: 24px;
+                color: #fff;
+                cursor: pointer;
+                display: none;
+            }
+            
+            
+            /* Home - Code */
+            .Home {
+                padding: 0vw 4.5vw;
+                padding-top: 6vw;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+            }
+            
+            .left-Home {
+                padding-top: 0vw;
+            }
+            
+            .left-Home h3 {
+                opacity: 0.7;
+                margin-top: 5px;
+                font-weight: 400;
+                width: 400px;
+            
+            }
+            
+            .rightBtn {
+                margin-top: 4vw;
+            }
+            
+            .leftBtn {
+                margin-left: 2vw;
+            }
+            
+            button {
+                padding: 1.1vw 2vw;
+                color: #fff;
+                font-weight: 700;
+                font-size: 1vw;
+                background-color: transparent;
+                border: 2px solid #17c7c7;
+                box-shadow: 0px 0px 10px #17c7c7;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+                z-index: 99;
+                border-radius: 5px;
+                transition: all ease 0.8s;
+            }
+            
+            button::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: -150%;
+                background-color: #05e2e2;
+                z-index: -9;
+                transition: all ease 0.5s;
+            }
+            
+            button:hover::after {
+                left: 0;
+                color: #000000ff;
+            }
+            
+            .left-Home {
+                width: 50%;
+                height: calc(100vh - 7vw);
+            }
+            .media{
+                margin-top: 10vw;
+            }
+            .socialMedia{
+                margin-left:2vw;
+                padding: 1vw;
+                border-radius: 50%;
+                border: 1px solid #ffff;
+                background-color:transparent;
+                transition: all ease 1s;
+            }
+            .left-Home .media .socialMedia:hover{
+               background-color: #e90ccf;
+               color:black;
+               scale:1;
+            }
+            
+            i {
+                overflow: hidden;
+            }
+            
+            i:hover::after {
+                right: 0;
+            }
+            
+            .right-Home {
+                width: 50%;
+                height: calc(100vh - 17vw);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .right-Home img {
+                box-shadow: 0px 0px 1500px #05e2e2;
+                padding: 1vw 1vw;
+                border: 2px solid #05e2e2;
+            }
+            
+            
+            /* About- code */
+            .About {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                position: relative;
+            }
+            
+            .About-sect1 {
+                width: 50%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .About-sect1 img {
+                border: 2px solid #fff;
+                width: 20vw;
+                height: 20vw;
+                border-radius: 10vw;
+                box-shadow: 0px 0px 200px #179bc7;
+            }
+            
+            .frmae {
+                padding: 2vw 2vw;
+                border-radius: 50%;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0;
+                background-color: #3f8484;
+                box-shadow: 0px 0px 200px #17c7c7;
+            }
+            
+            .frme1 {
+                padding: 3vw 3vw;
+                border-radius: 50%;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 0;
+                background-color: #1cf0f069;
+                box-shadow: 0px 0px 150px #17c7c7;
+            }
+            
+            .About-sect2{
+                width: 50%;
+                height: 84vh;
+                margin-top: 7vw;
+            }
+            
+            .hr {
+                margin-top: 0.7vw;
+                width: 2.6vw;
+                height: 1px;
+                border: 2px solid #05e2eE;
+            }
+            
+            .About-sect2>h1 {
+                text-shadow: 0px 0px 5px red;
+                -webkit-text-stroke: 1px #FFB02E;
+            }
+            
+            .about-me {
+                width: 70%;
+                margin-top: 2vw;
+                height: calc(100vw - 80vw);
+                /* background-color:red; */
+                color: #fff;
+            }
+            
+            .about-me>h1 {
+                margin-bottom: 1vw;
+                color: #FFC83D;
+            }
+            
+            .about-me span {
+                line-height: 25px;
+            }
+            
+            /*.Skill-coding */
+            .Skill {
+                width: 100%;
+                height: 100vh;
+            }
+            
+            .Skill>h1 {
+                padding-top: 8vw;
+                text-align: center;
+            }
+            
+            .container {
+                margin-top: 5vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15vw;
+            }
+            
+            .skill h2 {
+                font-weight: 400;
+                letter-spacing: 2px;
+                margin-top: 40px;
+                margin-bottom: 5px;
+                color: #fff;
+                font-size: 16px;
+            }
+            
+            .progress {
+                background: #959595;
+                width: 500px;
+                height: 20px;
+                border-radius: 5px;
+            }
+            
+            .progress div {
+                height: 20px;
+                width: 0%;
+                border-radius: 5px;
+            }
+            
+            .progress div span {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background: #222;
+                float: right;
+                margin-top: -15px;
+                margin-right: -20px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .html {
+                background: yellow;
+                animation: html 2s linear forwards;
+            }
+            
+            .css {
+                background: rgb(46, 203, 22);
+                animation: css 2s linear forwards;
+            }
+            
+            .JavaScript {
+                background: rgb(191, 50, 184);
+                animation: JavaScript 2s linear forwards;
+            }
+            
+            .java {
+                background: rgb(237, 27, 37);
+                animation: java 2s linear forwards;
+            }
+            
+            .cplus {
+                background: rgb(22, 203, 191);
+                animation: cplus 2s linear forwards;
+            }
+            
+            .dsa {
+                background: rgb(104, 6, 252);
+                animation: dsa 2s linear forwards;
+            }
+            
+            .html span {
+                border: 1px solid yellow;
+            }
+            
+            .css span {
+                border: 1px solid rgb(46, 203, 22);
+            }
+            
+            .JavaScript span {
+                border: 1px solid rgb(191, 50, 184);
+            }
+            
+            .java span {
+                border: 1px solid rgb(237, 27, 37);
+            }
+            
+            .cplus span {
+                border: 1px solid rgb(22, 203, 191);
+            }
+            
+            .dsa span {
+                border: 1px solid rgb(104, 6, 252);
+            }
+            
+            @keyframes html {
+                100% {
+                      width: 90%;
+                }
+            }
+            
+            @keyframes css {
+                100% {
+                      width: 80%;
+                }
+            }
+            
+            @keyframes JavaScript {
+                100% {
+                      width: 70%;
+                }
+            }
+            
+            @keyframes java {
+                100% {
+                      width: 80%;
+                }
+            }
+            
+            @keyframes cplus {
+                100% {
+                      width: 50%;
+                }
+            }
+            
+            @keyframes dsa {
+                100% {
+                      width: 50%;
+                }
+            }
+            /* Footer */
+            footer{
+                width: 100%;
+                height: 20vh;
+            }
+            .left-footer {
+                display: flex;
+                align-items: center;
+                background-color: #111111;
+                padding: 20px;
+                border-radius: 5px;
+                justify-content: space-between;
+              }
+              .left-footer img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: -15px 20px;
+              }
+            
+              .Conaction {
+                margin-right: 20px;
+              }
+            
+              .Conaction i {
+                font-size: 10px;
+                margin-right: 1vw;
+                color: #fffdfd; 
+                border: 1px solid #fff;
+                padding: 0.7vw;
+                font-weight: 600;
+                border-radius: 50%;
+                display: none;
+              }
+              .Conaction i:hover{
+                background-color: rgb(28, 2, 53);
+              }
+            
+              .left-footer ul {
+                list-style: none;
+                padding: 0;
+              }
+              
+              .left-footer ul li {
+                margin-bottom: 10px;
+                font-size: 16px;
+              }
+              
+              .left-footer ul li i {
+                margin-right: 0px;
+                font-size: 18px;
+                color:#fb0202;
+              }
+              .Conaction h1{
+                font-size: 20px;
+              }
+            
+              /* Mobile menue bar */
+              .mobileMenue{
+                width: 10%; 
+                height: 5%;
+                position: absolute;
+                top: 0;
+                text-align: center;
+                right: 1%;
+                background-color: #d1d1dd;
+                border-radius: 10px;
+                z-index: 999;
+                list-style: none;
+                visibility: hidden;
+              }
+              .mobileMenue ul{
+                list-style: none;
+              }
+              .mobileMenue li a{
+                text-decoration:solid;
+              }
+              .mobileMenue li a:hover{
+                text-decoration: line-through;
+                color: red;
+              }
+              
+            /* Code - for responsive */
+            @media (max-width:600px) {
+            
+                /* navigation-code */
+                body{
+                  font-family: 'sence-serif';
+                }
+                header {
+                      height: 13vw;
+                }
+            
+                header ul {
+                      display: none;
+                }
+            
+                header>i {
+                      display: block;
+                      font-size: 4vh;
+                }
+            
+                /* Page1-Code */
+                .Home {
+                      padding-top: 6vw;
+                      width: 100%;
+                      height: 100vh;
+                      display: inline;
+                }
+            
+                .left-Home {
+                      padding: 0 2vh;
+                      width: 100%;
+                      height: 50vh;
+                }
+            
+                .left-Home h1 {
+                      font-size: 30px;
+                }
+            
+                .left-Home h3 {
+                      width: 330px;
+                      margin-bottom: 3vh;
+                }
+            
+                button {
+                      padding: 2.1vh 1.9vh;
+                      font-size: 15px;
+                }
+            
+                .media i {
+                      display: none;
+                }
+            
+                .right-Home {
+                      width: 100%;
+                      height: 40vh;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                }
+            
+                /* Code-for page2 */
+                .About{
+                      width: 100%;
+                      height: 100vh;
+                      display: block;
+                      position: relative;
+                }
+            
+                .About-sect1 {
+                      width: 100%;
+                      height: 30vh;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                }
+            
+                .About-sect1 img {
+                      border: 2px solid #fff;
+                      width: 100vw;
+                      height: 100vw;
+                      border-radius: 50vw;
+                }
+            
+                .About-sect2 {
+                      padding: 0 3vh;
+                      width: 100%;
+                      height: 70vh;
+                      margin-top: 7vw;
+                }
+            
+                .about-me {
+                      width: 100%;
+                      height: 70%;
+                }
+            
+                .about-me h1 {
+                      width: 200%;
+            
+                }
+            
+                .about-me span {
+                      font-size: 15.5px;
+                }
+            
+                /* Page3 - Coding */
+                .page3>h1 {
+                      padding: 3vh;
+                      margin-bottom: 3vw;
+                      font-size: 60px;
+                      font-size: 30px;
+            
+                }
+            
+                .page3 {
+                      height: 40vh;
+                }
+            
+                .page3>h1:hover::after {
+                      display: none;
+                }
+            
+                /*.Skill-coding */
+                .Skill {
+                      width: 100%;
+                      height: 100vh;
+                      padding: 5vw;
+                }
+            
+                .Skill>h1 {
+                      padding-top: 15vw;
+                      text-align: center;
+                }
+            
+                .container {
+                
+                      margin-top: 0vw;
+                      display: inline;
+                      align-items: center;
+                      justify-content: center;
+                }
+            
+                .skill h2 {
+                      font-weight: 500;
+                      letter-spacing: 2px;
+                      margin-top: 6vh;
+                      margin-bottom: 20px;
+                      color: #fff;
+                      font-size: 20px;
+                }
+            
+                .progress {
+                      background: #959595;
+                      width:90vw;
+                      height: 15px;
+                      border-radius: 10px;
+                }
+            
+                .progress div {
+                      height: 15px;
+                      width: 0%;
+                      border-radius: 10px;
+                }
+            
+                .progress div span {
+                      height: 35px;
+                      width: 35px;
+                      border-radius: 50%;
+                      background: #222;
+                      float: right;
+                      margin-top: -10px;
+                      margin-right: -15px;
+                      color: #fff;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                }
+            
+                .html span {
+                      border: 2px solid yellow;
+                }
+            
+                .css span {
+                      border: 2px solid rgb(46, 203, 22);
+                }
+            
+                .JavaScript span {
+                      border: 2px solid rgb(191, 50, 184);
+                }
+            
+                .java span {
+                      border: 2px solid rgb(237, 27, 37);
+                }
+            
+                .cplus span {
+                      border: 2px solid rgb(22, 203, 191);
+                }
+            
+                .dsa span {
+                      border: 2px solid rgb(104, 6, 252);
+                }
+                footer{
+                      width: 100%; 
+                      height: 10vh;
+                    
+                }
+                .left-footer{
+                      margin-top: 20vw;
+                      width: 100%;
+                      display: flex;
+                      align-content: center;
+                      justify-content: center;
+                      height: 10vh;
+                }
+                .left-footer img{
+                      padding: 0.2vw;
+                      background-color: #fff;
+                      border: 1px solid #fff;
+                }
+                .left-footer ul {
+                      list-style: none;
+                      padding: 0;
+                      display: none;
+                }
+                .Conaction{
+                      margin-left: 10vw;
+                }
+                .Conaction i{
+                      padding: 3vw;
+                      margin-left: 2vw;
+                      display: inline;
+                }
+                .Conaction h1{
+                      display: none;
+                }
+                /* menue task */
+                .mobileMenue{
+                      width: 140px; 
+                      height: 100px;
+                      position: absolute;
+                      top:40px ;
+                      text-align: center;
+                      right: 1%;
+                      background-color: #1313ca;
+                      border-radius: 10px;
+                      z-index: 999999;
+                      list-style: none;
+                      visibility:hidden;
+                    }
+            }
+                    </style>
+
+    </head>
+
+    <body>
+        <header>
+            <h1><span style="color: #e90ccf;">M</span><span style="color: #82e735;">A</span><span
+                        style="color: #1deefd;">N</span><span style="color: #2896f7;">I</span><span
+                        style="color: #fcf1fb;">S</span><span style="color: #e95d0c;">H</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#Home" target="_parent" id="home-link">Home</a></li>
+                    <li><a href="#About" target="_blank" id="about-link">About</a></li>
+                    <li><a href="#Skill" target="_blank" id="skill-link">Skills</a></li>
+                    <li><a href="#Certificate" target="_blank" id="certificate-link">Certificate</a></li>
+                    <li><a href="#Project" target="_blank" id="project-link">Project</a></li>
+                </ul>
+            </nav>
+            <i class="ri-align-justify" id="menu"></i>
+        </header>
+        <div id="main">
+            <div class="Home" id="homePage">
+                <div class="left-Home">
+                    <h1>Hi! I'm Manish Kumar</h1>
+                    <h1>And I'm <span class="auto-type" style="color: aqua;"></span></h1>
+                    <h3>As a frontend developer, I excel in HTML, CSS, and web applications.
+                        My dedication to innovation, teamwork, and user-centric design ensures
+                        cutting-edge solutions for your projects.
+                    </h3>
+                    <button class="rightBtn" id="resume">Download Resume</button>
+                    <button class="rightBtn leftBtn" id="hireRequest">Hire Me Now!</button>
+                    <div class="media">
+                        <i class="ri-linkedin-fill socialMedia    linkedIn"></i> 
+                        <i class="ri-facebook-fill socialMedia    facebook"></i> 
+                        <i class="ri-instagram-line socialMedia   instagram"></i> 
+                        <i class="ri-github-fill socialMedia      github"></i> 
+                    </div>
+                </div>
+                <div class="right-Home">
+                    <div class="About-sect1">
+                        <div class="frmae">
+                            <div class="frme1">
+                                <img src="https://camo.githubusercontent.com/61491d59e71fec5c794945fed916a4a682b6c0404fc31f30b08a0d919c558404/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303631313632342d5445363451474b524a4738535741495553374e532f6b6531375a77644742546f6464493870446d34386b506f73776c7a6a53564d4d2d53784f703743563539425a772d7a505067646e346a557756634a45315a7657515578776b6d794578676c4e714770304976544a5a616d574c49327a76595748384b332d735f3479737a63703272795449304871544f6161556f68724938504936465879386339505774426c7141566c555335697a7064634958445a71445976707252715a32395077306f2f636f64696e672d667265616b2e676966" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+      
+            <div class="About" id="aboutMe">
+                <div class="About-sect1">
+                    <div class="frmae">
+                        <div class="frme1">
+                            <img src="./images/Profile2.jpg" alt="Profile2">
+                        </div>
+                    </div>
+                </div>
+                <div class="About-sect2 right-page21">
+                    <h1>About Me 🙂</h1>
+                    <div class="hr"></div>
+                        <div class="about-me">
+                            <h1>Hello World 👋!</h1>
+                            <span>I'm Manish Kumar,and i
+                                Passionate about Coding and Development with a keen focus on efficient
+                                problem-solving, I am on a journey to master full-stack web development. I thrive in
+                                collaborative teamwork and excel at tackling complex challenges. Currently pursuing
+                                a BTech degree from Technocrats Institute of Technology and Science in Bhopal,
+                                Madhya Pradesh, I am dedicated to honing my skills and contributing to innovative
+                                solutions in the world of technology.
+                            </span>
+                        </div>
+                        <button id="meMore">Read More!</button>
+                    </div>
+                </div>
+
+                <div class="Skill" id="mySkill">
+                    <h1>Skills</h1>
+                    <div class="container">
+                        <div class="skill">
+                            <h2>HTML</h2>
+                            <div class="progress">
+                                <div class="html"><span>90%</span></div>
+                            </div>
+                            <h2>CSS</h2>
+                            <div class="progress">
+                                <div class="css"><span>80%</span></div>
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                            <div class="progress">
+                                <div class="JavaScript"><span>70%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h2>Java (Core)</h2>
+                            <div class="progress">
+                                <div class="java"><span>80%</span></div>
+                            </div>
+                            <h2>C++</h2>
+                            <div class="progress">
+                                <div class="cplus"><span>50%</span></div>
+                            </div>
+                            <h2>DSA</h2>
+                            <div class="progress">
+                                <div class="dsa"><span>50%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="left-footer">
+                        <img src="./images/Profile1.jpg" id="profile-image" alt="Profile1">
+                        <div class="Conaction">
+                            <i class="ri-linkedin-fill  linkedIn"></i>
+                            <i class="ri-facebook-fill  facebook"></i>
+                            <i class="ri-instagram-line instagram"></i>
+                            <i class="ri-github-fill    github"></i>
+                            <h1>I'm <span class="auto-type1" style="color: #e90ccf"></span></h1>
+                        </div>
+                        <ul>
+                            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"  style="text-decoration: none;"><i class="ri-mail-unread-line"></i> : manishsah7485@gmail.com</a></li>
+                            <li><i class="ri-phone-fill"></i> : 62068-48898</li>
+                        </ul>
+                    </div>
+                </footer>
+
+                <div class="mobileMenue">
+                    <ul>
+                        <li><a href="#Home" target="_parent" id="mHome">Home</a></li>
+                        <li><a href="#About" target="_blank" id="aAbout">About</a></li>
+                        <li><a href="#Skill" target="_blank" id="sSkill">Skills</a></li>
+                        <li><a href="#Certificate" target="_blank" id="mCertificate">Certificate</a></li>
+                        <li><a href="#Project" target="_blank" id="mProject">Project</a></li>
+                    </ul>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script>
+                
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
+  });
+  
+  
+  function locomotive(){
+    gsap.registerPlugin(ScrollTrigger);
+  
+  // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+  
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector("#main"),
+    smooth: true
+  });
+  // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+  locoScroll.on("scroll", ScrollTrigger.update);
+  
+  // tell ScrollTrigger to use these proxy methods for the "#main" element since Locomotive Scroll is hijacking things
+  ScrollTrigger.scrollerProxy("#main", {
+    scrollTop(value) {
+      return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+    }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+    getBoundingClientRect() {
+      return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+    },
+    // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+    pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
+  });
+  
+  
+  // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
+  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+  
+  // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+  ScrollTrigger.refresh();
+  
+  }
+  locomotive();
+  
+  var typed = new Typed('.auto-type', {
+      strings: ["Frontend Developer","UI/UX Developer","Problem Solver"],
+      smartBackspace: true,
+      loop:true
+  });
+  
+  var typed = new Typed('.auto-type1', {
+    strings: ["Manish Kumar.","Frontend Developer!","UI/UX Developer","Problem Solver!"],
+    smartBackspace: true,
+    loop:true
+  });
+  
+  
+  gsap.to(".Skill .progress", {
+    scrollTrigger:{
+          trigger:".Skill",
+          scroller:"#main", 
+          // markers:true,
+          start:"top 0%",
+          end:"top 100%",
+          scrub:2,
+    }
+  });
+  
+  // DOM Apply 
+  // nav-elem
+  let home = document.querySelector("#home-link"); 
+  let about = document.querySelector("#about-link"); 
+  let skill = document.querySelector("#skill-link"); 
+  let certificate = document.querySelector("#certificate-link"); 
+  let project = document.querySelector("#project-link");
+  
+  
+  
+  // Icon-media
+  let linkedin = document.querySelectorAll(".linkedIn");
+  let facebook = document.querySelectorAll(".facebook"); 
+  let instagram = document.querySelectorAll(".instagram");
+  let github = document.querySelectorAll(".github"); 
+  
+  // Define the linkd function
+  function linkd(){
+    let urlLink = 'https://www.linkedin.com/in/manish-kumar-b591a1226/';
+    window.open(urlLink, '_blank'); 
+  }
+  linkedin.forEach(linkedin => {
+    linkedin.addEventListener('click', linkd);
+  });
+  
+  
+  function facebk(){
+    let urlLink = 'https://www.facebook.com/profile.php?id=100028204669444';
+    window.open(urlLink, '_blank');
+  };
+  facebook.forEach(facebook => {
+    facebook.addEventListener('click', facebk);
+  });
+  
+  
+  function gitH(){
+    let urlLink = 'https://github.com/bjmanish';
+    window.open(urlLink, '_blank'); 
+  };
+  github.forEach(github => {
+    github.addEventListener('click',gitH);
+  })
+  
+  function insta(){
+    let urlLink = 'https://www.instagram.com/bj__manish__45/' ;
+    window.open(urlLink, '_blank');
+  };
+  instagram.forEach(instagram => {
+    instagram.addEventListener('click', insta)
+  })
+  
+  
+  home.addEventListener('click',function(){
+    let UrlLink = '#homePage'; 
+    home.href = UrlLink;
+    home.target = '_blank'
+  })
+  
+  about.addEventListener('click',function(){
+    let UrlLink = '#aboutMe'; 
+    about.href = UrlLink;
+    about.target = '_blank'
+  })
+  
+  skill.addEventListener('click',function(){
+    let UrlLink = '#mySkill'; 
+    skill.href = UrlLink;
+    skill.target = '_blank'
+  })
+  
+  certificate.addEventListener('click',function(){
+    let UrlLink = 'https://www.linkedin.com/in/manish-kumar-b591a1226/'; 
+    certificate.href = UrlLink;
+    certificate.target = '_blank'
+  })
+  
+  project.addEventListener('click',function(){
+    let UrlLink = 'https://github.com/bjmanish'; 
+    project.href = UrlLink;
+    project.target = '_blank'
+  })
+  
+  // About 
+  let meMore = document.querySelector("#meMore"); 
+  meMore.addEventListener('click', function() {
+    let urlLink = 'https://www.linkedin.com/in/manish-kumar-b591a1226/';
+    window.open(urlLink, '_blank'); 
+  });
+  
+  // Hire me and resume
+  let resume = document.querySelector("#resume"); 
+  let hireRequest = document.querySelector("#hireRequest"); 
+  
+  resume.addEventListener('click', function() {
+    resume.innerHTML = "😥 Sorry! Not available ";
+    resume.style.backgroundColor = "red";
+    setTimeout(function() {
+      resume.innerHTML = "Download Resume";
+      resume.style.backgroundColor = "transparent";
+    }, 2000);
+  });
+  
+  hireRequest.addEventListener('click',function(){
+    hireRequest.innerHTML = "📞 62068-48898";
+    hireRequest.style.backgroundColor = "blue";
+    setTimeout(function() {
+      hireRequest.innerHTML = "Hire Me Now!";
+      hireRequest.style.backgroundColor = "transparent";
+    }, 2000);
+  })
+  
+  // code for reload 
+  let lastWidth = window.innerWidth;
+  window.addEventListener('resize', function() {
+    const currentWidth = window.innerWidth;
+    if (currentWidth < lastWidth) {
+      location.reload();
+    }
+    lastWidth = currentWidth;
+  });
+  
+  // Mobile Menue Bar..
+  let flag = 0;
+  let menuIcon = document.getElementById('menu');
+  let menu = document.querySelector(".mobileMenue");
+  menuIcon.addEventListener('click', function() {
+    if(flag === 0){
+      menuIcon.className = 'ri-close-line';
+      menu.style.visibility="initial";
+    
+      flag = 1;
+    }
+    else{
+      menuIcon.className = 'ri-align-justify';
+      menu.style.visibility="hidden";
+      flag = 0;
+    }
+  });
+
+            </script>
+        </div>
+    </body>
+</html>
